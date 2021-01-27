@@ -1,7 +1,5 @@
 from django.db import models
 
-
-
 # Create your models here.
 
 class FlashCards(models.Model):
@@ -20,3 +18,4 @@ class FlashCards(models.Model):
     @classmethod
     def update_flash_cards(cls, id, value):
         cls.objects.filter(id=id).update(name = value)
+

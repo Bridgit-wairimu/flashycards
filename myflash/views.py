@@ -6,14 +6,16 @@ from .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
-
+from .models import FlashCards
 
 # Create your views here.
 
 @login_required(login_url='login')
 def index(request):
-    
-    return render(request, 'index.html')
+    context = {
+        'flashcards': FlashCards.objects.all()
+    }
+    return render(request, 'index.html' , context)
 
 
 @csrf_exempt
