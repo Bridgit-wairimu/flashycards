@@ -1,3 +1,4 @@
+
 from django.db import models
 import datetime as dt
 from cloudinary.models import CloudinaryField
@@ -24,6 +25,4 @@ class FlashCards(models.Model):
     @classmethod
     def update_flash_cards(cls, id, value):
         cls.objects.filter(id=id).update(name = value)
-
-
 
