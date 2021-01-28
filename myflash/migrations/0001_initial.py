@@ -24,3 +24,7 @@ class Migration(migrations.Migration):
             ],
         ),
     ]
+<<<<<<< HEAD
+=======
+
+>>>>>>> e7881adcbd8b41ac64f14c989b13c8aea580c599
