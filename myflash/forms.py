@@ -10,3 +10,8 @@ class CreateUserForm(UserCreationForm):
         fields = ['username','email','password1','password2']
 
 
+# class UserFlashForm(forms.ModelForm):
+#     class Meta:
+#         model = FlashCards
+#         fields = ['flash_title', 'flash_description']
+        
