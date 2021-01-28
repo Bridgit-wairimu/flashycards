@@ -25,8 +25,5 @@ class FlashCards(models.Model):
     def update_flash_cards(cls, id, value):
         cls.objects.filter(id=id).update(name = value)
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e7881adcbd8b41ac64f14c989b13c8aea580c599
