@@ -13,13 +13,19 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a  style="color: purple" class="navbar-item">Home </a>
-        
-     
+      <a class="navbar-item" href="{% url 'index' %}">
+        <i class="material-icons">home</i>
+        Home
+      </a>
 
       </div>
-    </div>
+      <div class="navbar-start">
+                  <a class="navbar-item" href="{% url 'post-create'%}">
+                    <i style="color: black;" class="material-icons">perm_media</i>
 
+                    POST
+                  </a>
+      </div>
 
     <div class="col-sm-4 col-md-4 navbar-right">
 
@@ -35,7 +41,6 @@
         </div>
       </form>
     </div>
-
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
