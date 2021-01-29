@@ -38,3 +38,5 @@ class FlashCards(models.Model):
 
 
 
+
+

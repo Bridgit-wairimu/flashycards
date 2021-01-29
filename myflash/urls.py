@@ -11,8 +11,8 @@ urlpatterns=[
     path('logout/', views.logoutUser, name="logout"),
     path('post/new/', FlashcardCreateView.as_view(), name='post-create'),    
     path('post/<int:pk>/update/',FlashcardUpdateView.as_view(), name="updateForm"),
-    path('post/<int:pk>/delete/',FlashcardDeleteView.as_view(), name="deleteForm")
-
+    path('post/<int:pk>/delete/',FlashcardDeleteView.as_view(), name="deleteForm"),
+    path('search/cards', views.search_cards, name = 'search_cards'),
 ]
 
 if settings.DEBUG:
