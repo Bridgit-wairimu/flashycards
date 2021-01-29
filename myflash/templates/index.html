@@ -4,33 +4,30 @@
 {% block content %}
 
 {{block.super}}
-
-<h1> Welcome to the flash cards</h1>
-
-<div class="container-fluid main">
-    <div class="container-fluid headview">
-   
-    
+<body style= "background-color:  #f9f9f9;">
+<h1 style="color: purple; text-align: center;  font-family: 'Yesteryear', cursive, serif; "> Welcome to the flashcards</h1>
     <div class="templates d-flex flex-row">
-        {% for flashcards in flashcards %}
+        {% for  flashcards in flashcards %}
 
         <div class="col-md-4 mt-4">
             <div class="card profile-card-5">
-                <div class="card-img-block">
-         
-                <div class="card-body pt-0">
-                    <h5 class="card-title">{{flashcards.title|title}}</h5>
+                       <div class="card-body pt-0">
+                    <h5 class="card-title">{{flashcards.title}}</h5>
                     <p class="card-text">{{flashcards.description}}</p>
+                    <small class="card-text" style="color: blue; font-weight: 500;"  > Category :{{flashcards.category}}</small>
                     <hr>
-                    
-                  <p class="card-text "><img src="{{image.profile.image.url}}" class="nav-img mr-2" alt="">
-                By {{flashcards.user.username|title}} <span style="float:right">{{flashcards.date|date}}</span>
-            </p>
+                
+                <p style="color: black; font-weight: 500;"  class="card-text "><img src="{{image.profile.image.url}}" class="nav-img mr-2" alt="">
+                By {{flashcards.user.username|title}} <span style="float:right">{{flashcards.pub_date|date}}</span>
+                  </p>                
+                <a class="btn btn-secondary btn-sm mt-1 mb-sm" href="{% url 'updateForm' flashcards.id%}">Update</a>
+                <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'deleteForm'  flashcards.id%}">Delete</a>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
-
+</body>
 {%endblock%}
+
