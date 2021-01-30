@@ -12,8 +12,5 @@ class CreateUserForm(UserCreationForm):
 
 
 
-# class UserFlashForm(forms.ModelForm):
-#     class Meta:
-#         model = FlashCards
-#         fields = ['flash_title', 'flash_description']
+
         

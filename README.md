@@ -16,7 +16,7 @@ An application to write and keep important notes for studying.
 
 ###### Once pip has finished downloading the dependencies:
 
-7. (virtual)$ cd flashy
+7. (virtual)$ cd flashycards
 8. (virtual)$ python manage.py runserver
 And navigate to http://127.0.0.1:8000/flashycards/.
 
