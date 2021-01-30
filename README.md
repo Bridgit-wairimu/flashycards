@@ -1,5 +1,5 @@
 #### BY
-#### Rovine Sydney Wanjala, 23/01/2021
+#### Rovine Sydney Wanjala, Bridgit Wairimu Kirika, 29/01/2021
 #### Description
 An application to write and keep important notes for studying.
 
