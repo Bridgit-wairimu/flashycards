@@ -1,1 +1,1 @@
-web: gunicorn myflash.wsgi --log-file -
+web: gunicorn flash.wsgi --log-file -
