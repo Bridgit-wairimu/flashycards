@@ -88,12 +88,11 @@ def deleteForm(request):
 def search_cards(request):
     if 'cards' in request.GET and request.GET["cards"]:
         cards = request.GET.get("cards")
-        searched_images = Image.filter_by_location(cards)
+        searched_flashcards = Flashcards.filter_by_category(cards)
         message = f"{cards}"
-        print("Image.......",searched_images)
-        return render(request, 'cards.html', {"message": message, "images": searched_images})
+        print("Flashcards.......",searched_flashcards)
+        return render(request, 'card.html', {"message": message, "images": searched_flashcards})
     else:
-        message = "You haven't searched for any image"
-        return render(request, 'cards.html', {"message": message})
-
+        message = "You haven't searched for any card"
+        return render(request, 'card.html', {"message": message})
 
