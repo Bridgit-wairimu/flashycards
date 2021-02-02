@@ -16,7 +16,7 @@ An application to write and keep important notes for studying.
 5. A user should see when the flash card was created and when it was last updated.
 
 
-#### Setup/Installation Requirements
+# Setup/Installation Requirements
 1. The first thing to do is to clone the repository: $ git clone https://github.com/Bridgit-wairimu/flashycards.git
 2. $ cd flashy
 3. Create a virtual environment to install dependencies in and activate it:
@@ -29,22 +29,22 @@ And navigate to http://127.0.0.1:8000/flashycards/.
 8. To interact with the website copy and paste the URL on the browser: https://rovine-flashcards.herokuapp.com/
 
 
-#### Technologies Used
+# Technologies Used
 1. Python
 2. Html5
 3. Bootstrap
 
-#### Known Bugs
+# Known Bugs
 So far, on this application no errors discovered, but if there's an error you would discover on installation, feel free to reach out.
 
 
-#### Support and contact details
+# Support and contact details
 You can find developers :
 
 1. hollaUs +254712387089/+254707285907.
 
-### License
-### MIT License
+# License
+## MIT License
 
 Copyright (c) [2021] [Rovine Sydney Wanjala]
 
